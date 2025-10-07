@@ -57,6 +57,22 @@
                     id="treetrunk-normal"
                     src="assets\Bark_06_normal.jpg"
                 >
+                <img
+                    id="sky"
+                    src="assets\sky.jpg"
+                >
+                <a-asset-item
+                    id="chair"
+                    src="assets\chair.glb"
+                >
+                </a-asset-item>
+                <a-asset-item
+                    id="lamp"
+                    src="assets\lamp.glb"
+                >
+                </a-asset-item>
+                >
+                </a-asset-item>
             </a-assets>
             <a-plane
                 material=
@@ -74,7 +90,7 @@
             </a-plane>
         
         <a-sky
-            color="lightskyblue"
+            src="#sky"
         >
         </a-sky>
         <a-mixin
@@ -230,6 +246,21 @@
             position="8 2 -6"
         >
         </a-sphere>
+        <a-entity
+            gltf-model="#chair"
+            position="-1.0 0 -10"
+            rotation="0 45 0"
+            scale="0.1 0.1 0.1"
+        >
+        </a-entity>
+        <a-entity
+            gltf-model="#lamp"
+            position="1.0 0 -10"
+            scale="0.225 0.225 0.225"
+        >
+        </a-entity>
        </a-scene>
     </body>
 </html>
+//https://poly.pizza/m/13AL0KYItKD
+//https://poly.pizza/m/7AqWZQIaCQf
